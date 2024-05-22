@@ -119,3 +119,23 @@ function evenNumbers(){
 
 }
 evenNumbers()
+
+ //Write a function called greater that takes in three numbers as arguments and returns the greatest number among the three. If they are all equal, it should return any of them.  
+
+ let a;
+ let b;
+ let c;
+
+ function greater(a,b,c){
+   if(a>b && a>c){
+       return a;
+   }else if(b>a && b>c){
+       return b;
+   }else if(c>a && c>b){
+       return c;
+   }else{
+       return a,b,c;
+   }
+ }
+ console.log(greater(2,35,9))
+ console.log(greater(23,23,23))
