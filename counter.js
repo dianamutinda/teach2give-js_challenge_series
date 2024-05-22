@@ -1,14 +1,5 @@
 
-//Write a function called nextNumber that takes in a number as an argument, increments it by 1 to find the next number, and then returns the next number.  
 
-let num;
-
-function nextNumber(num){
-  console.log(num=num+1);
-}
-nextNumber(1);
-nextNumber(0);
-nextNumber(-2);
 
 //Write a function called rectanglePerimeter that takes in the length and width as arguments and returns the perimeter of the rectangle.
 let length;
