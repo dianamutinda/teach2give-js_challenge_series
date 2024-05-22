@@ -91,3 +91,16 @@ function greaterBMI(bobBmi,janeBmi){
   basketBallPoints(1, 1);
   basketBallPoints(7, 5);
   basketBallPoints(0, 5);
+
+   //Write a function called footballPoints that returns the number of points a football team has obtained so far, the first argument for this function is the number of games a team has won, the second argument is the number of games the team has drawn and the third arguement is the number of times the team has lost. 3 points are awarded for every game won, 1 point for every game draw and 0 points for  every game lost.  
+
+   let won = 3;
+   let drawn = 1;
+   let lost = 0;
+ 
+   function footballPoints(won,drawn,lost){
+     return (3*won)+(1*drawn)+(0*lost);
+   }
+   console.log(footballPoints(5,0,2))
+   console.log(footballPoints(0,0,2))
+   console.log(footballPoints(5,2,0))
