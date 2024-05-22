@@ -104,3 +104,18 @@ function greaterBMI(bobBmi,janeBmi){
    console.log(footballPoints(5,0,2))
    console.log(footballPoints(0,0,2))
    console.log(footballPoints(5,2,0))
+
+   //Write a function called isEven that takes in a number as an argument, the function returns true if a number is even and returns false if a number is odd. Use this function to log to the console all the even numbers between 0 and 101.
+
+function isEven(number){
+    return number%2 == 0;
+}
+function evenNumbers(){
+    for(let i=0; i<=101; i++){
+        if (isEven(i)){
+            console.log(i)
+        }
+    }
+
+}
+evenNumbers()
