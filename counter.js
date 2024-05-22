@@ -29,22 +29,6 @@ function greaterBMI(bobBmi,janeBmi){
   basketBallPoints(7, 5);
   basketBallPoints(0, 5);
 
-  //Given two numbers, write a function called isSumMoreThan100 return true if their sum is greater than 100 and false if their sum is less than 100. 
-
-  let num1;
-  let num2;
-
-  function isSumMoreThan100(num1,num2){
-    sum2 = num1+num2;
-    if (sum2>100){
-      console.log(true);
-    }else (sum2<100);{
-      console.log(false);
-    }
-  }
-  isSumMoreThan100(25, 55);
-  isSumMoreThan100(72, 38);
-
   //Given that 1 minute is equal to 60 seconds. Write a function called convertToSeconds that takes in the number of minutes as an arguments and returns the seconds equivalent in the format ```x seconds``` e.g 120 seconds, 300 seconds. e.t.c. If the seconds equivalent is 0, then it should just return 0, if the seconds equivalent is 1, then it should return 1, if the seconds equivalent is more than 1, then it should return with the string "seconds"  
 
 
