@@ -42,3 +42,21 @@ function returnSomethingToMe(str){
   console.log(returnSomethingToMe("is better than nothing"))
   console.log(returnSomethingToMe("jack daniels"))
   console.log(returnSomethingToMe("pinocchio"))
+
+  
+  //Given two numbers, write a function called isSumMoreThan100 return true if their sum is greater than 100 and false if their sum is less than 100. 
+
+  let num1;
+  let num2;
+  let sum2;
+
+  function isSumMoreThan100(num1,num2){
+    sum2 = num1+num2;
+    if (sum2>100){
+      console.log(true);
+    }else (sum2<100);{
+      console.log(false);
+    }
+  }
+  isSumMoreThan100(25, 55);
+  isSumMoreThan100(72, 38);

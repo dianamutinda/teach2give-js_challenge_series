@@ -1,14 +1,5 @@
 
 
-//Write a function called returnSomethingToMe that returns the string "something" followed by a space " " followed by the string that was passed into the function.
-
-function returnSomethingToMe(str){
-  return `something ${str}`;
-}
-console.log(returnSomethingToMe("is better than nothing"))
-console.log(returnSomethingToMe("jack daniels"))
-console.log(returnSomethingToMe("pinocchio"))
-
 //Bob and Jane want to know who has a bigger BMI than the other. Write a function called greaterBMI that will take in as the first arguement the BMI of Bob and as the second Argument the BMI of Jane. If Bob has a bigger BMI than jane, your function should return the string "Bob", if Jane has a bigger BMI than Bob, it should return the string "Jane", if they have the same BMI, it should return the string "Equal". 
 
 let bobBmi;
@@ -44,10 +35,10 @@ function greaterBMI(bobBmi,janeBmi){
   let num2;
 
   function isSumMoreThan100(num1,num2){
-    sum = num1+num2;
-    if (sum>100){
+    sum2 = num1+num2;
+    if (sum2>100){
       console.log(true);
-    }else (sum<100);{
+    }else (sum2<100);{
       console.log(false);
     }
   }
