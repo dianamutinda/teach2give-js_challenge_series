@@ -4,35 +4,34 @@ let x;
 let y;
 
 function sum(x,y){
-  console.log(x+y);
+  return x+y;
 
 }
-sum(3,2);
-sum(-4,-8);
-sum(-3,5);
+console.log(sum(3,2))
+console.log(sum(-4,-8))
+console.log(sum(-3,5))
 
 //Write a function called nextNumber that takes in a number as an argument, increments it by 1 to find the next number, and then returns the next number.  
 
 let num;
 
 function nextNumber(num){
-  console.log(num=num+1);
+  return num=num+1;
 }
-nextNumber(1);
-nextNumber(0);
-nextNumber(-2);
+console.log(nextNumber(1))
+console.log(nextNumber(0))
+console.log(nextNumber(-2))
 
 //Write a function called rectanglePerimeter that takes in the length and width as arguments and returns the perimeter of the rectangle.
 let length;
 let width;
 
 function rectanglePerimeter(length,width){
-  console.log((length+width)*2);
+  return (length+width)*2;
 }
-rectanglePerimeter(2,5);
-rectanglePerimeter(3,5);
-rectanglePerimeter(10,20);
-
+console.log(rectanglePerimeter(2,5))
+console.log(rectanglePerimeter(3,5))
+console.log(rectanglePerimeter(10,20))
 
 //Write a function called returnSomethingToMe that returns the string "something" followed by a space " " followed by the string that was passed into the function.
 
@@ -53,13 +52,14 @@ function returnSomethingToMe(str){
   function isSumMoreThan100(num1,num2){
     sum2 = num1+num2;
     if (sum2>100){
-      console.log(true);
+      return true;
     }else (sum2<100);{
-      console.log(false);
+      return false;
     }
   }
-  isSumMoreThan100(25, 55);
-  isSumMoreThan100(72, 38);
+  
+  console.log(isSumMoreThan100(25, 55))
+  console.log(isSumMoreThan100(72, 38))
 
   
 //Bob and Jane want to know who has a bigger BMI than the other. Write a function called greaterBMI that will take in as the first arguement the BMI of Bob and as the second Argument the BMI of Jane. If Bob has a bigger BMI than jane, your function should return the string "Bob", if Jane has a bigger BMI than Bob, it should return the string "Jane", if they have the same BMI, it should return the string "Equal". 
@@ -69,16 +69,15 @@ let janeBmi;
 
 function greaterBMI(bobBmi,janeBmi){
   if(bobBmi>janeBmi){
-    console.log("Bob");
+    return "Bob";
   }else if (janeBmi>bobBmi){
-    console.log("Jane")
+    return "Jane";
   }else 
-    console.log("Equal")
+    return "Equal";
   }
-  greaterBMI(30, 25);
-  greaterBMI(35, 40);
-  greaterBMI(35, 35);
-
+  console.log(greaterBMI(30, 25))
+  console.log(greaterBMI(35, 40))
+  console.log(greaterBMI(35, 35))
   
   //You are counting points for a basketball game, 2 points are awarded for every 2 pointer and 3 points for every 3 pointer. Write a function called basketBallPoints, the first argument should be the number of two pointers scored by the team and the second argument the number of three pointers scored by the team. This function returns the final points for the team. 
 
@@ -86,12 +85,12 @@ function greaterBMI(bobBmi,janeBmi){
   let threePointers = 3;
 
   function basketBallPoints(twoPointers,threePointers){
-    console.log((twoPointers*2)+(threePointers*3));
+   return (twoPointers*2)+(threePointers*3);
   }
-  basketBallPoints(1, 1);
-  basketBallPoints(7, 5);
-  basketBallPoints(0, 5);
-
+  console.log(basketBallPoints(1, 1))
+  console.log(basketBallPoints(7, 5))
+  console.log(basketBallPoints(0, 5))
+ 
    //Write a function called footballPoints that returns the number of points a football team has obtained so far, the first argument for this function is the number of games a team has won, the second argument is the number of games the team has drawn and the third arguement is the number of times the team has lost. 3 points are awarded for every game won, 1 point for every game draw and 0 points for  every game lost.  
 
    let won = 3;
@@ -159,3 +158,26 @@ evenNumbers()
  }
  console.log(least(2,35,9))
  console.log(least(23,23,23))
+
+ //Given that 1 minute is equal to 60 seconds. Write a function called convertToSeconds that takes in the number of minutes as an arguments and returns the seconds equivalent in the format ```x seconds``` e.g 120 seconds, 300 seconds. e.t.c. If the seconds equivalent is 0, then it should just return 0, if the seconds equivalent is 1, then it should return 1, if the seconds equivalent is more than 1, then it should return with the string "seconds"  
+
+ const oneMinute = 60;
+ let numberOfMinutes;
+
+ function convertToSeconds(numberOfMinutes){
+   let Seconds = numberOfMinutes*oneMinute;
+   if (Seconds == 0){
+       return 0;
+   }else if(Seconds == 1){
+       return `${Seconds} second`;
+   }else{
+       return `${Seconds} seconds`;
+   }
+
+ }
+ console.log(convertToSeconds(10))
+ console.log(convertToSeconds(0))
+ console.log(convertToSeconds(1))
+ console.log(convertToSeconds(1/60))
+
+
