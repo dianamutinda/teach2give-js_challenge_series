@@ -1,21 +1,5 @@
 
 
-//Bob and Jane want to know who has a bigger BMI than the other. Write a function called greaterBMI that will take in as the first arguement the BMI of Bob and as the second Argument the BMI of Jane. If Bob has a bigger BMI than jane, your function should return the string "Bob", if Jane has a bigger BMI than Bob, it should return the string "Jane", if they have the same BMI, it should return the string "Equal". 
-
-let bobBmi;
-let janeBmi;
-
-function greaterBMI(bobBmi,janeBmi){
-  if(bobBmi>janeBmi){
-    console.log("Bob");
-  }else if (janeBmi>bobBmi){
-    console.log("Jane")
-  }else 
-    console.log("Equal")
-  }
-  greaterBMI(30, 25);
-  greaterBMI(35, 40);
-  greaterBMI(35, 35);
 
   //You are counting points for a basketball game, 2 points are awarded for every 2 pointer and 3 points for every 3 pointer. Write a function called basketBallPoints, the first argument should be the number of two pointers scored by the team and the second argument the number of three pointers scored by the team. This function returns the final points for the team. 
 

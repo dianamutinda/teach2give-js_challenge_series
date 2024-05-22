@@ -78,3 +78,16 @@ function greaterBMI(bobBmi,janeBmi){
   greaterBMI(30, 25);
   greaterBMI(35, 40);
   greaterBMI(35, 35);
+
+  
+  //You are counting points for a basketball game, 2 points are awarded for every 2 pointer and 3 points for every 3 pointer. Write a function called basketBallPoints, the first argument should be the number of two pointers scored by the team and the second argument the number of three pointers scored by the team. This function returns the final points for the team. 
+
+  let twoPointers = 2;
+  let threePointers = 3;
+
+  function basketBallPoints(twoPointers,threePointers){
+    console.log((twoPointers*2)+(threePointers*3));
+  }
+  basketBallPoints(1, 1);
+  basketBallPoints(7, 5);
+  basketBallPoints(0, 5);
