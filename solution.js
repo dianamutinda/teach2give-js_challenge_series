@@ -32,3 +32,13 @@ function rectanglePerimeter(length,width){
 rectanglePerimeter(2,5);
 rectanglePerimeter(3,5);
 rectanglePerimeter(10,20);
+
+
+//Write a function called returnSomethingToMe that returns the string "something" followed by a space " " followed by the string that was passed into the function.
+
+function returnSomethingToMe(str){
+    return `something ${str}`;
+  }
+  console.log(returnSomethingToMe("is better than nothing"))
+  console.log(returnSomethingToMe("jack daniels"))
+  console.log(returnSomethingToMe("pinocchio"))

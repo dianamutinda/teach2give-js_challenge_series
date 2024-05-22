@@ -1,17 +1,5 @@
 
 
-
-//Write a function called rectanglePerimeter that takes in the length and width as arguments and returns the perimeter of the rectangle.
-let length;
-let width;
-
-function rectanglePerimeter(length,width){
-  console.log((length+width)*2);
-}
-rectanglePerimeter(2,5);
-rectanglePerimeter(3,5);
-rectanglePerimeter(10,20);
-
 //Write a function called returnSomethingToMe that returns the string "something" followed by a space " " followed by the string that was passed into the function.
 
 function returnSomethingToMe(str){
