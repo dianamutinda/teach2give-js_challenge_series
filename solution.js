@@ -139,3 +139,23 @@ evenNumbers()
  }
  console.log(greater(2,35,9))
  console.log(greater(23,23,23))
+
+ //Write a function called least that takes in three numbers as arguments and returns the least among the three. If they are all equal, it should return any of them
+   
+ let m;
+ let n;
+ let o;
+
+ function least(m,n,o){
+   if(m<n && m<o){
+       return m;
+   }else if(n<m && n<o){
+       return n;
+   }else if(o<m && o<n){
+       return o;
+   }else{
+       return m,n,o;
+   }
+ }
+ console.log(least(2,35,9))
+ console.log(least(23,23,23))
